@@ -1,0 +1,38 @@
+\documentclass[12pt]{article} % Base document class
+
+% Load packages in the correct order
+\usepackage{fontspec}      % Font management for XeLaTeX
+\usepackage{polyglossia}   % Multilingual support, including Hebrew
+\usepackage{amsmath}       % Math support
+\usepackage{amstext}       % Text in math mode
+\usepackage{graphicx}      % Include images
+\usepackage{geometry}      % Page geometry settings
+\usepackage{hyperref}      % Hyperlinks
+\usepackage{bidi}          % Bidirectional typesetting (MUST be loaded last)
+
+% Document font setup
+\setmainfont{FreeSerif} % Use FreeSerif or another font that supports Hebrew
+\newfontfamily\hebrewfont[Script=Hebrew]{FreeSerif} % Hebrew font
+\newfontfamily\hebrewfonttt[Script=Hebrew]{FreeMono} % Monospace Hebrew font
+
+% Language setup
+\setdefaultlanguage{hebrew} % Set default language to Hebrew
+
+% Page geometry
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+
+% Hebrew text example
+זהו מסמך לדוגמה עם תמיכה מלאה בעברית. ניתן לכתוב כאן טקסט בעברית כולל נוסחאות מתמטיות, תמונות, והערות שוליים.
+
+% Math example
+להלן דוגמה לנוסחה מתמטית:
+\[
+E = mc^2
+\]
+
+% Text with monospace
+תיבה בעברית ב-\texttt{LaTeX} היא פשוטה באמצעות שימוש בחבילה \texttt{polyglossia} והתאמת הפונטים.
+
+\end{document}
